@@ -25,17 +25,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2">
-          <div className="bg-primary w-8 h-8 rounded flex items-center justify-center">
-            <span className="text-white font-bold text-xl">V</span>
-          </div>
-          <span className="font-bold text-xl md:text-2xl text-white tracking-tight">Vertex</span>
+        <a href="#" className="flex items-center">
+          <span className="font-bold text-xl md:text-2xl text-primary tracking-tight">Vertex</span>
         </a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="flex gap-6">
             <li><a href="#services" className="text-white/80 hover:text-white transition-colors">Services</a></li>
+            <li><a href="#" className="text-white/80 hover:text-white transition-colors">Portfolio</a></li>
             <li><a href="#pricing" className="text-white/80 hover:text-white transition-colors">Pricing</a></li>
             <li><a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a></li>
           </ul>
@@ -58,6 +56,7 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md border-b border-border py-4 fade-in">
           <ul className="flex flex-col container mx-auto px-4">
             <li><a href="#services" className="block py-2 text-white/80 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Services</a></li>
+            <li><a href="#" className="block py-2 text-white/80 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Portfolio</a></li>
             <li><a href="#pricing" className="block py-2 text-white/80 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Pricing</a></li>
             <li><a href="#contact" className="block py-2 text-white/80 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
             <li className="mt-2">
